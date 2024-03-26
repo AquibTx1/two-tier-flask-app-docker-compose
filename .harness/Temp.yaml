@@ -1,0 +1,5 @@
+service:
+  name: Temp
+  identifier: Temp
+  orgIdentifier: default
+  projectIdentifier: Temperory
