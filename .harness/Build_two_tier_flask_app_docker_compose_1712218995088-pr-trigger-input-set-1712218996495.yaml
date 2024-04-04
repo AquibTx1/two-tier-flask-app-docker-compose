@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_two_tier_flask_app_docker_compose_1712218995088-pr-trigger-input-set
+  identifier: Build_two_tier_flask_app_docker_compose_1712218995088prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Temperory
+  pipeline:
+    identifier: Build_two_tier_flask_app_docker_compose_1712218995088
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
