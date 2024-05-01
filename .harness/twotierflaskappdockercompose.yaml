@@ -31,7 +31,7 @@ pipeline:
                   name: Run_1
                   identifier: Run_1
                   spec:
-                    shell: Powershell
+                    shell: Sh
                     command: cd two-tier-flask-app-docker-compose
         delegateSelectors:
           - docker-delegate
