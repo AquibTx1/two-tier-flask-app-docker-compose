@@ -1,0 +1,35 @@
+pipeline:
+  name: two-tier-flask-app-docker-compose
+  identifier: twotierflaskappdockercompose
+  projectIdentifier: Temperory
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github
+        repoName: two-tier-flask-app-docker-compose
+        build: <+input>
+  stages:
+    - stage:
+        name: build
+        identifier: build
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Docker
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Powershell
+                    command: cd two-tier-flask-app-docker-compose
