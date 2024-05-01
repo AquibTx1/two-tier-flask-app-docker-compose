@@ -33,3 +33,5 @@ pipeline:
                   spec:
                     shell: Powershell
                     command: cd two-tier-flask-app-docker-compose
+        delegateSelectors:
+          - docker-delegate
