@@ -34,6 +34,6 @@ pipeline:
                     connectorRef: dockerhub
                     repo: flask-app
                     tags:
-                      - lodu239/flask-app
+                      - latest
         delegateSelectors:
           - ec2-medium
