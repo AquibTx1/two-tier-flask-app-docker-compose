@@ -32,6 +32,6 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: cd two-tier-flask-app-docker-compose
+                    command: ls
         delegateSelectors:
           - ec2-medium
