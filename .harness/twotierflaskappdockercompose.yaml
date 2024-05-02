@@ -34,4 +34,4 @@ pipeline:
                     shell: Sh
                     command: cd two-tier-flask-app-docker-compose
         delegateSelectors:
-          - docker-delegate
+          - ec2-medium
