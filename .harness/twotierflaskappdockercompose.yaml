@@ -32,6 +32,6 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: ls
+                    command: docker build -t flaskapp .
         delegateSelectors:
           - ec2-medium
